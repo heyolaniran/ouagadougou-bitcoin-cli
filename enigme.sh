@@ -22,7 +22,8 @@ echo -e "======================================================${NC}\n"
 # 1. Initialisation du portefeuille "Peuple"
 echo -e "${CYAN}[Étape 1] Rassemblement à la Place d'Armes...${NC}"
 bitcoin-cli -regtest createwallet "Peuple" > /dev/null 2>&1 || bitcoin-cli -regtest loadwallet "Peuple" > /dev/null 2>&1 || true
-PEUPLE_ADDR=$(bitcoin-cli -regtest -rpcwallet=Peuple getnewaddress "Mineur_Populaire")
+## METTEZ LE SCRIPT DE VOTRE HISTOIRE ICI
+PEUPLE_ADDR=
 echo -e "Identité du peuple créée. Adresse de collecte : ${BOLD}$PEUPLE_ADDR${NC}"
 
 # Génération des fonds (101 blocs pour rendre le coinbase dépensable)
